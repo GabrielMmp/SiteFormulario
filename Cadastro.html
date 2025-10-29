@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+
+body { font-family: sans-serif; background-color: rgb(212, 224, 236) ; opacity: 100%; display: flex; justify-content: center; background-size: cover;}
+
+* { padding: 0; border-radius: 30px; margin: 10px; }
+
+.Grupo2 {
+    background-color: white;
+    opacity: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    display: block;
+
+}
+
+button{ 
+height: 70px;
+justify-content: center;
+
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<form>
+   
+    <div class="Grupo2" style="display: flex; justify-content: center;">
+      <label><h1 align="center">Destino</h1></label>
+        <option selected disabled value=""></option>
+     <select id="Destino" required>
+     <option>Selecione</option>
+     <option>Cape town</option>
+     <option> Berlin</option>
+     <option> Roma</option>
+      <option> Utah</option>
+       <option> Fortaleza</option>
+    </select>
+    <br> 
+
+    <label><h1 align="center">Data Da Viagem</h1></label>
+
+         <Input type="date" name="Data" id="Data" required></Input>
+         <br> 
+
+    <label><h1 align="center">Hora de embarque</h1></label>
+ 
+        <Input type="time" name="Hora" id="Hora" required></Input>
+        <br>   
+
+
+
+    <label><h1 align="center">Nome Do Passageiro</h1></label>
+
+           <Input type="text" name="Passageiros" id="Passageiros" required></Input>
+           <br> 
+
+    <label><h1 align="center">Idade Do Passageiro</h1></label>
+
+        <Input type="text" name="Idade" id="Idade" required ></Input>
+        <br> 
+
+            <label><h1 align="center">Email</h1></label>
+
+        <Input type="email" name="Email" id="Email" required ></Input>
+        <br> 
+
+            <label><h1 align="center">Endereço</h1></label>
+            
+        <Input type="text" name="Endereco" id="Endereco" required ></Input>
+        <br>
+
+                    <label><h1 align="center">Sexo</h1></label>
+         <div>  
+        <Input type="radio" name="Sexo" id="Sexo" required >Masculino</Input>
+        <br>
+    </div>
+
+            <div>  
+        <Input type="radio" name="Sexo" id="Sexo" required >Feminino</Input>
+        <br>
+    </div>
+
+            <div>  
+        <Input type="radio" name="Sexo" id="Sexo" required >Outros</Input>
+        <br>
+    </div>
+
+            <div>  
+        <Input type="radio" name="Sexo" id="Sexo" required >Prefiro Não Responder</Input>
+        <br>
+    </div>
+
+    <hr>
+              <div>  
+        <Input type="radio" name="Notificacao" id="Notificacao" required >Aceita receber Notificações no Email</Input>
+        <br>
+    </div>
+
+                <div>  
+        <Input type="radio" name="Notificacao" id="Notificacao" required > Não Aceito receber Notificações no Email</Input>
+        <br>
+    </div>
+
+        <button type="submit">
+            <h2>Finalizar</h2>
+        </button>
+  </div>
+    
+</form>
+    
+</body>
+</html>
